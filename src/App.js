@@ -8,7 +8,7 @@ function App() {
 useEffect(() => {
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/a');
+      const response = await axios.get('https://yoratyaackov.osc-fr1.scalingo.io/api/a');
       console.log(response.data);
       setMessage(response.data);
     } catch (error) {
