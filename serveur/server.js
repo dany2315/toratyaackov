@@ -15,7 +15,9 @@ const URL_DATABASE_SCALINGO = process.env.SCALINGO_MONGO_URL;
 const URL_DATABASE_DEV = process.env.URL_DATABASE;  //URL_DATABASE
 const PORT = process.env.PORT || 8080;
 const __filename = fileURLToPath(import.meta.url);
+
 const __dirname = path.dirname(__filename);
+console.log(path.join(__dirname, "../build"));
 console.log(ENV);
 
 
@@ -32,12 +34,12 @@ mongoose
   );
 
 
-  app.set("trust proxy", true);
+  
   app.use(bodyParser.json({ limit: "10000000mb" }));
   app.use(cors());
   app.use(morgan("dev"));
   app.use(express.json());
-  app.use(express.static(path.join(__dirname, "build")));
+  app.use(express.static(path.join(__dirname, "../build")));
   app.use(express.urlencoded({ extended: true }));
   app.use((req, res, next) => {
     res.setHeader(
@@ -58,9 +60,9 @@ mongoose
   
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello Wd!')
 })
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${app.address().port()}`)
+  console.log(`Example app listening on port  ${PORT}`)
 })
