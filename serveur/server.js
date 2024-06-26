@@ -48,11 +48,11 @@ const app = express();
     res.setHeader("Cache-Control", "no-cache")
     res.setHeader("Expires", "0");
     next();
-  });
+  }); 
 
   
   app.use("/api", router);
-  
+
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'), (err) => {
       if (err) {
