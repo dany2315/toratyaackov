@@ -16,7 +16,7 @@ const ENV = process.env.ENV;
 const PORT = process.env.PORT || 8080;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-console.log(path.join(__dirname, "../build"));
+
 console.log(ENV);
 
 

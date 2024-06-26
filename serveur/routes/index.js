@@ -1,19 +1,10 @@
 import express from "express";
-
-
+import authRoutes from "./authRoutes.js";
 
 const router = express.Router();
 
-
-
-router.get('/a',async (req,res)=>{
-	try {
-        console.log('aiiie');
-        res.status(200).send('jeton ok')
-    } catch (error) {
-        res.status(500).send(error.message)
-    }
-})
-
+router.use('/auth',authRoutes)
+router.use('/auth',authRoutes)
+router.use('/auth',authRoutes)
 
 export default router

@@ -1,13 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+
+//import context
+import { SnackbarProvider } from "./context/snackbarContext";
+import { AuthProvider } from "./context/authContext";
+import { LoadingProvider } from "./context/loadingContext";
+import { MenuProvider } from "./context/menuContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <LoadingProvider>
+        <SnackbarProvider>
+          <MenuProvider>
+            <BrowserRouter>
+              <App />
+            </BrowserRouter>
+          </MenuProvider>
+        </SnackbarProvider>
+      </LoadingProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
 
