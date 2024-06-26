@@ -38,7 +38,7 @@ const app = express();
   app.use(cors());
   app.use(morgan("dev"));
   app.use(express.json());
-  app.use(express.static(path.join(__dirname, "../build")));
+  app.use(express.static(path.join(__dirname, '../frontend/build')));
   app.use(express.urlencoded({ extended: true }));
   app.use((req, res, next) => {
     res.setHeader(
@@ -52,6 +52,14 @@ const app = express();
 
   
   app.use("/api", router);
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'), (err) => {
+      if (err) {
+        res.status(500).send(err);
+      }
+    });
+  });
   app.use("/", (req, res) => {
     console.log(req.hostname);
     res.send("welcome to the home page");
