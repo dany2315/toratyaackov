@@ -25,7 +25,7 @@ useEffect(() => {
       <div className='text-4xl font-bold self-start'>
         Hello
       </div>
-      <div className=" h-[400px] w-[90%] mt-4  ">
+      <div className=" h-[400px] w-[95%] mt-4 rounded-xl overflow-hidden ">
         <Carousel  slideInterval={5000}>
           <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
           <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />

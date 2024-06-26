@@ -12,9 +12,9 @@ function Footer() {
             <div>Rabanim</div>
             <div>Contact</div>
         </div>
-        <div className='flex flex-row w-full justify-center items-center'> Developer par DaTech: Contact : +972768098624</div> 
+        <div className='flex flex-row w-full justify-center items-center text-center text-xs'> Developer par DaTech: Contact : +972768098624</div> 
 
-        <div className='flex flex-row w-full justify-center items-center'> © 2024 Torat Yaackov All rights reserved</div>
+        <div className='flex flex-row w-full justify-center items-center text-sm'> © 2024 Torat Yaackov All rights reserved</div>
     </div>
   )
 }
