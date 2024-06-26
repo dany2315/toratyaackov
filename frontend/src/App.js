@@ -1,5 +1,6 @@
 import { useEffect ,useState } from 'react';
-import axios from 'axios';
+import api from './utils/Axios';
+
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
 useEffect(() => {
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/a');
+      const response = await api.get('a');
       console.log(response.data);
       setMessage(response.data);
     } catch (error) {
