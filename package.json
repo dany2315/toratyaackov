@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm install --prefix serveurstart && npm install --prefix frontend && npm run build --prefix frontend",
+    "postinstall": "npm install --prefix serveur start && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "node serveur/server.js"
-   
   },
-  "author": "",
+  "engines": {
+  "node": "20.14.0"
+},
+  "author": "david serfaty",
   "license": "ISC"
 }
