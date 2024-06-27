@@ -3,13 +3,13 @@ import Footer from '../component/Footer'
 
 function Evenements() {
   return (
-    <div className="flex flex-col items-center  ">
+    <div className="flex flex-col items-center   ">
 
-      <div className=" h-[200px] md:h-[350px]  w-[100%]   overflow-hidden  ">
-        <div className='w-full h-full bg-black  z-50 relative  '>
+      <div className=" h-[200px] md:h-[350px]  w-[100%]  overflow-hidden  ">
+        <div className='w-full h-full bg-black relative  '>
           <img src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="..." className="w-full h-full object-cover opacity-50" />
-          <div className='absolute bottom-16 left-11'>
-          <div className="border-2 mb-2 border-orange-400 w-60"></div>
+          <div className='absolute bottom-16 left-11 '>
+            <div className="border-2 mb-2 border-orange-400 w-60"></div>
             <div className="text-3xl text-white font-bold  ">
                 Maamad bnei ayeshivot
             </div> 

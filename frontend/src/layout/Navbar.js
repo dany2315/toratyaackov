@@ -16,7 +16,7 @@ function Navbar() {
 
   return ( 
     <>
-          <div className=" flex flex-row justify-between items-center w-full h-17 px-6 py-5  shadow-2xl border-b-2 bg-[#F3F3F3]  ">
+          <div className=" flex flex-row justify-between items-center w-full h-17 px-6 py-5  shadow-2xl border-b-2 bg-[#F3F3F3] z-50 ">
             <div className="rounded-2xl cursor-pointer overflow-hidden" onClick={()=>{navigate('/')}}> 
               <img src={logo} alt="logo" className="h-11 w-11"/>
             </div>
