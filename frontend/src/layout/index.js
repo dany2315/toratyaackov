@@ -14,7 +14,7 @@ function Layout() {
   return (
     <>
       <div className="flex flex-col overflow-hidden h-[100vh]  w-[100%]   bg-[#F3F3F3]  relative">
-        <div className=" bg-[#F3F3F3] shadow-2xl fixed -top-0 w-full">
+        <div className=" bg-[#F3F3F3] shadow-2xl fixed top-0 w-full">
           <Navbar/>
         </div>
           
