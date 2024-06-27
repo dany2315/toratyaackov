@@ -24,7 +24,7 @@
     }
   } 
   
-  #root {
+  body, html, #root  {
     text-decoration:none;
     overflow: hidden;
     width: 100%;
