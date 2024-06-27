@@ -5,7 +5,7 @@ function Footer() {
     <div className='flex flex-col justify-center items-center w-full gap-5  border-t pt-4 pb-10 mt-4'>
 
       <div className='flex flex-col justify-center items-center'>
-          <div className=' flex flex-col justify-start items-start w-[500px] px-8 py-6 rounded-2xl border-2 '>
+          <div className=' flex flex-col justify-start items-start max-w-[500px] px-8 py-6 rounded-2xl border-2 '>
             <div className="text-xl font-bold uppercase ">
               Incrivez-vous a notre NEWSLETTER !!
             </div>

@@ -95,7 +95,7 @@ useEffect(() => {
 
         <div className=" flex flex-row flex-wrap justify-center md:gap-x-4 lg:gap-x-6  xl:gap-x-14 gap-y-16   items-center mt-16 sm:mt-24   max-w-7xl px-8 lg:px-8 ">
           
-          <div className="flex flex-col items-center w-[60%] lg:w-[40%] rounded-3xl bg-white overflow-hidden">
+          <div className="flex flex-col items-center w-[80%] md:w-[60%] lg:w-[40%] rounded-3xl bg-white overflow-hidden">
               <img src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="..." className="w-full h-[130px] object-cover " />
               <div className="flex flex-col  px-4 py-8">
                 <div className="text-2xl font-bold uppercase ">

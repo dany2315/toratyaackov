@@ -19,7 +19,7 @@ function Layout() {
         </div>
           
        
-        <div className="overflow-auto h-full w-full  no-scrollbar bg-[#F3F3F3]">
+        <div className="overflow-auto h-full w-full overflow-x-hidden  no-scrollbar bg-[#F3F3F3]">
           <Loading/>
            <CustomSnackbar/>
            <Outlet />
