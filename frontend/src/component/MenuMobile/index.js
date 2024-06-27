@@ -13,7 +13,7 @@ function MenuMobile() {
     <>
     
     {menu?
-      <div className=" absolute top-0 right-0 z-50 flex flex-col justify-center items-center w-full h-[100vh] bg-slate-200 gap-2 no-scrollbar overflow-hidden " >
+      <div className=" absolute top-0 right-0 z-50 flex flex-col justify-center items-center w-full h-[100%] bg-slate-200 gap-2 no-scrollbar overflow-hidden " >
                   <div className="rounded-xl cursor-pointer active:scale-95 active:bg-slate-400 overflow-hidden px-3 py-1 absolute top-[28px] right-[20.5px]" onClick={()=>{navigate('/');closeMenu()}}>
                       <MdMenuOpen size={40} color="#000000" />
                     </div>
