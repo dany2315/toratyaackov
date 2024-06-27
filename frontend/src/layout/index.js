@@ -13,11 +13,13 @@ function Layout() {
 
   return (
     <>
-      <div className="flex flex-col overflow-hidden h-[100vh]  w-[100%] px-3 py-3 border  relative">
-        
+      <div className="flex flex-col overflow-hidden h-[100vh]  w-[100%]   bg-[#F3F3F3]  relative">
+        <div className=" bg-[#F3F3F3] shadow-2xl">
           <Navbar/>
+        </div>
+          
        
-        <div className="overflow-auto h-full w-full no-scrollbar">
+        <div className="overflow-auto h-full w-full  no-scrollbar bg-[#F3F3F3]">
           <Loading/>
            <CustomSnackbar/>
            <Outlet />

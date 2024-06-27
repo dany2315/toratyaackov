@@ -10,6 +10,7 @@ import { SnackbarProvider } from "./context/snackbarContext";
 import { AuthProvider } from "./context/authContext";
 import { LoadingProvider } from "./context/loadingContext";
 import { MenuProvider } from "./context/menuContext";
+import { MesureProvider } from "./context/mesureContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,9 +19,11 @@ root.render(
       <LoadingProvider>
         <SnackbarProvider>
           <MenuProvider>
-            <BrowserRouter>
-              <App />
-            </BrowserRouter>
+            <MesureProvider>
+              <BrowserRouter>
+                <App />
+              </BrowserRouter>
+            </MesureProvider>
           </MenuProvider>
         </SnackbarProvider>
       </LoadingProvider>

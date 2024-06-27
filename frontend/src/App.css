@@ -15,3 +15,10 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+input[type=text]:focus {
+    box-shadow: none;
+  }
+
+  input[type=email]:focus {
+    box-shadow: none;
+  }

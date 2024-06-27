@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import Evenements from "./pages/Evenements";
 import Visa from "./pages/Visa";
 import KoupatHolim from "./pages/KoupatHolim";
+import Actions from "./pages/Actions";
 
 
 
@@ -60,6 +61,7 @@ function App() {
     >
       <Route index element={<Home />} />
       <Route path="evenements" element={<Evenements/>} /> 
+      <Route path="actions" element={<Actions/>} /> 
       <Route path="contact" element={<Contact/>}/>
       {/* <Route path="don" element={<Don/>} /> */}
       <Route path="visa" element={<Visa/>} />
